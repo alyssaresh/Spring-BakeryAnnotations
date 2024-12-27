@@ -1,5 +1,6 @@
 # Wilhem's Wacky Bakery
-* **Objective** - to implement a _webservice_ which exposes _endpoints_ for creating, reading, updating, and deleting `Baker` and `Muffin` objects.
+* **Objective** - to implement a _webservice_ which exposes _endpoints_ for 
+* creating, reading, updating, and deleting `Baker` and `Muffin` objects.
 * **Purpose** - to demonstrate the use of
 	* [Spring Annotations](https://springframework.guru/spring-framework-annotations/)
 	* [CRUD Operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
@@ -10,7 +11,8 @@
 ## Instructions
 * This project is a complete Spring boot application with annotations removed.
 * Your objective is to add the correct annotations above each class member which requires it.
-* Some tests have been created. However, the the veracity of the application should be tested by making HTTP-requests via the [Postman application](https://www.getpostman.com/downloads/).
+* Some tests have been created. However, the the veracity of the application should 
+* be tested by making HTTP-requests via the [Postman application](https://www.getpostman.com/downloads/).
 
 
 
@@ -26,7 +28,8 @@
 * **Description:**
 	* Allows the persistence provider to recognize it as a persistence class.
 	* An object representative of a snap shot of data from a database.
-	* By default, maps this entity to a table whose name is the name of the annotated class. Can be rerouted via the `@Table` annotation
+	* By default, maps this entity to a table whose name is the name of the annotated class. 
+  Can be rerouted via the `@Table` annotation
 	* Entities are said to be _fungible_, or _mutually interchangeable_.
 * **Pre-requesites for use:**
 	* An interface cannot be an entity.
@@ -91,7 +94,8 @@
 	* injects bean by type
 	* can be used alone.
 	* If is used alone, it will be wired by type
-	* If more than one bean of same type are declared in the container `@Autowired` does not know which beans to use for injection.
+	* If more than one bean of same type are declared in the container `@Autowired` 
+  does not know which beans to use for injection.
 * **Pre-requesites for use:**
 	* Field-type must be annotated with some form of `@Component`.
 
@@ -106,7 +110,8 @@
 #### `@Component`
 * Annotates class signature
 * **Description**
-	* denotes that Spring framework will autodetect these classes for dependency injection when annotation-based configuration and classpath scanning is used.
+	* denotes that Spring framework will autodetect these classes for dependency 
+  injection when annotation-based configuration and classpath scanning is used.
 * **Prerequisites for use:**
 	* none	
 	
@@ -137,7 +142,8 @@
 	* specialized form of `@Component`
 	* indicates that a particular class serves the role of a controller
 	* acts as a stereotype for the annotated class, indicating its role
-	* dispatcher scans such annotated classes for mapped methods and detects @RequestMapping annotations
+	* dispatcher scans such annotated classes for mapped methods and detects 
+  @RequestMapping annotations
 * **Pre-requesites for use:**
 	* none
 
